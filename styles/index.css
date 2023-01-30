@@ -1,0 +1,9 @@
+/* This is to fix opacity. I will use multiple paragraph */
+.slidev-layout {
+    h1 + p {
+        @apply opacity-75;
+    }
+    h1 {
+        @apply opacity-75;
+    }
+}
