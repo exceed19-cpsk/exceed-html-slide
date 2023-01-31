@@ -208,15 +208,112 @@ transition: slide-left
 - `label` เป็น tag สำหรับบ่งบอกว่า `input` แต่ละอันหมายความว่าอะไร
 - `button` เป็น tag สำหรับปุ่ม ปกติจะไม่ค่อยได้ใช้เวลาเขียน HTML ร่วมกับ backend ทั่วไป แต่จะใช้บ่อยเวลาทำ React
 - `textarea` เป็น tag ข้อความยาว
-- `select` และ `option` เอาไว้ทำข้อความยาว ๆ
+- `select` และ `option` ตัวเลือก
 
 
----
----
 
 ---
-layout: section
 transition: slide-left
 ---
 
-# Lab time!
+# ตัวอย่าง Form HTML
+
+```html
+<form action="/register.php" method="POST">
+  <label for="name">Name</label>
+  <input id="name" name="name" />
+  <label for="surname">Surname</label>
+  <input id="surname" name="surname" />
+</form>
+```
+
+---
+
+
+# ตาราง
+
+ในบางงานอาจจะต้องใช้ตารางในการแสดงผล HTML เลยมี tag สำหรับตารางโดยเฉพาะ
+
+- `table` คือตัวตารางเลย
+- `thead` = หัว `tbody` = ตัว `tfoot` = ท้าย
+- `tr` หมายถึงแถวหนึ่งแถว
+- `td` คือข้อมูลในตาราง `th` จะคล้าย ๆ `td` แต่ใช้กับตาราง
+
+
+---
+
+# Code
+
+```html
+ <table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+---
+
+# ตารางที่ได้
+
+ <table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+
+---
+
+# Self-study (Optional)
+
+- [https://developer.mozilla.org/en-US/docs/Learn/HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+  เป็นลิงก์ของ MDN พี่ใช้ประจำเวลาจำ syntax ไม่ได้ นอกจาก HTML แล้วก็มีเรื่อง web อื่น ๆ อีก
+- [https://www.freecodecamp.org/learn/](https://www.freecodecamp.org/learn/)
+  เป็นเว็บที่มีบทความและคอร์สเรียนฟรี ๆ ตั้งแต่ HTML, CSS, JavaScript หรือแม้กระทั่งสาย Data
+
+
+---
+layout: center
+---
+
+# Next Section
+
+Section ถัดไปจะพูดถึง CSS โดยละเอียด การสอน CSS จะเป็นแบบให้ทำแลป จะไม่ได้มี slide แล้วนะครับ
