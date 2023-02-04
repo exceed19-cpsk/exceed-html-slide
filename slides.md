@@ -34,7 +34,7 @@ fonts:
 มาเรียน HTML กับ CSS กันดีกว่า
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+กล่าวแนะนำน้อง ๆ ให้บอกชื่อตัวเอง รุ่น และก็อาจจะเกริ่น ๆ นิดหน่อย
 -->
 
 ---
@@ -62,11 +62,6 @@ HTML ย่อมาจาก HyperText Markup Language
 </html>
 ```
 
-
-<!--
-อันนี้ให้สอนตาม slide ได้เลย
--->
-
 <style>
 h1 {
   background-color: #2B90B6;
@@ -80,7 +75,7 @@ h1 {
 </style>
 
 <!--
-Here is another comment.
+ให้สอนตาม slide ได้เลย
 -->
 
 ---
@@ -102,6 +97,11 @@ HTML ประกอบด้วย tag เช่น `html`, `body`, `h1` แต
 <a href="https://www.youtube.com/watch?v=mW61VTLhNjQ?autoplay=1" target="_blank">Totally not a rickroll</a>
 
 
+<!--
+`href` จะเป็น link ที่ไปหน้าอื่น ๆ `target` จะเอาไปบอกว่าไปตรงไหน โดยปกติจะใช้กันเป็น `_blank` ซึ่งหมายความว่า
+ให้เปิด tab ใหม่เฉย ๆ
+-->
+
 ---
 transition: slide-left
 ---
@@ -117,6 +117,8 @@ transition: slide-left
 ทั้งไฟล์ HTML จะถูกครอบด้วย tag `html`
 
 เรื่อง JavaScript จะพูดกันในวันหน้า ๆ นะครับ
+
+<!-- ตาม Slide -->
 
 ---
 transition: slide-left
@@ -140,6 +142,13 @@ transition: slide-left
 </html>
 ```
 
+<!--
+ไล่ตามส่วน
+
+`head` จะใช้โหลดข้อมูลและอธิบายส่วนต่าง ๆ เกี่ยวกับ HTML ที่ปกติคนไม่จำเป็นต้องรู้ แต่ว่าจะสะดวกกับ computer
+
+`body` คือส่วนที่ใช้แสดงผลขริง
+-->
 
 ---
 
@@ -155,6 +164,8 @@ transition: slide-left
 
 <!--
 เตรียมทำแลป
+
+lab ที่ทำจะเป็นเว็บที่แนะนำตัวเองง่าย ๆ  ยังไม่สอน tag link เพื่อโยง CSS ให้ใส่รูปอะไรก็ได้ แนะนำ unsplash
 -->
 
 
@@ -299,6 +310,28 @@ transition: slide-left
     </tr>
   </tfoot>
 </table>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  thead {
+    @apply bg-blue-500 text-white dark:bg-blue-700;
+  }
+
+  tfoot {
+    @apply bg-green-500 text-white dark:bg-green-700;
+  }
+
+  tbody tr:nth-child(odd) {
+    @apply bg-gray-100;
+  }
+
+</style>
+
+<!--
+อธิบายเรื่องใส่ CSS เพิ่มเติมด้วย
+-->
 
 ---
 
